@@ -1,6 +1,6 @@
 
 # beersProviders
-That's a project created in fulllab academy. RJ - Brazil
+That's a project created on fulllab academy. RJ - Brazil
 
 
 Things you may want to cover:
