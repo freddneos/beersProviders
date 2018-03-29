@@ -55,8 +55,5 @@ class ProvidersController < ApplicationController
             params.require(:provider)
                   .permit(:alcohol,:price,:style,:name)
             end
-                
-            end
-        end
         
 end

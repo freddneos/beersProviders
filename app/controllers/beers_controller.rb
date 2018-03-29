@@ -1,14 +1,14 @@
 class BeersController < ApplicationController
 #Escopes
-has_scope :by_alcohol , using: [:from . :to], type: :hash
-has_scope :by_price , using: [:from . :to], type: :hash
+has_scope :by_alcohol , using: [:from , :to], type: :hash
+has_scope :by_price , using: [:from , :to], type: :hash
 has_scope :by_style
 has_scope :by_name
 
 
 
     def index 
-        @beers = applt_scopes(Beer).page(params.fetch(:page , 1))
+        @beers = apply_scopes(Beer).page(params.fetch(:page , 1))
                                     .per(params.fetch(:per_page,20))
     end
     
@@ -59,5 +59,4 @@ has_scope :by_name
           .permit(:alcohol,:price,:style,:name)
     end
         
-    end
 end
