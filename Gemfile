@@ -14,6 +14,7 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'kaminari'
 gem 'has_scope'
 gem 'slim'
+gem 'jquery-rails'
 
 gem 'sass-rails', '~> 5.0'
 gem 'materialize-sass'
